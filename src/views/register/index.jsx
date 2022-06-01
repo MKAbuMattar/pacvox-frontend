@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react'
+import React, { Fragment, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
@@ -18,19 +18,15 @@ import {
   RegisterLink,
 } from './style'
 
+import { useIsUserLogin } from '../../hooks/useUserLogin'
+
+import { toastOptions } from '../../utils/toastOptions.util'
+
 import { registerRoute } from '../../constants/api.constant'
 import * as ConstantMessage from '../../constants/message.constant'
 
 const Register = () => {
-  const toastOptions = {
-    position: 'bottom-right',
-    autoClose: 8000,
-    pauseOnHover: true,
-    draggable: true,
-    theme: 'dark',
-  }
-
-  const navigate = useNavigate()
+  useIsUserLogin()
 
   const [values, setValues] = useState({
     username: '',
@@ -39,11 +35,7 @@ const Register = () => {
     confirmPassword: '',
   })
 
-  useEffect(() => {
-    if (localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
-      navigate('/')
-    }
-  }, [])
+  const navigate = useNavigate()
 
   const handleChange = (event) => {
     setValues({ ...values, [event.target.name]: event.target.value })

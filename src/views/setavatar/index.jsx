@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import { Buffer } from 'buffer'
 
 import Logo from '../../assets/img/logo.png'
 import RandomBackground from '../../components/randombackground'
@@ -19,52 +18,27 @@ import {
   SetAvatarSubmit,
 } from './style'
 
+import { useCheckUserAccess } from '../../hooks/useUserLogin'
+import useGetAvatar from '../../hooks/useGetAvatar'
+
+import { toastOptions } from '../../utils/toastOptions.util'
+
 import { setAvatarRoute } from '../../constants/api.constant'
-import { getRndInteger } from '../../utils/getRndInteger.util'
-import { getRndColor } from '../../utils/getRndColor.util'
+import * as ConstantMessage from '../../constants/message.constant'
 
 const SetAvatar = () => {
-  const toastOptions = {
-    position: 'bottom-right',
-    autoClose: 8000,
-    pauseOnHover: true,
-    draggable: true,
-    theme: 'dark',
-  }
+  useCheckUserAccess()
 
-  const avatar = [
-    'adventurer',
-    'adventurer-neutral',
-    'avataaars',
-    'big-ears',
-    'big-ears-neutral',
-    'big-smile',
-    'bottts',
-    'female',
-    'gridy',
-    'male',
-    'micah',
-    'miniavs',
-    'open-peeps',
-    'personas',
-    'pixel-art',
-    'pixel-art-neutral',
-  ]
+  const { getAvatars, isAvatarsLoading, getAvatarError } = useGetAvatar()
 
-  const api = `https://avatars.dicebear.com/api`
-  const navigate = useNavigate()
   const [avatars, setAvatars] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
   const [selectedAvatar, setSelectedAvatar] = useState(undefined)
 
-  useEffect(async () => {
-    if (!localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY))
-      navigate('/login')
-  }, [])
+  const navigate = useNavigate()
 
   const setProfilePicture = async () => {
     if (selectedAvatar === undefined) {
-      toast.error('Please select an avatar', toastOptions)
+      toast.error(ConstantMessage.AVATAR_REQUIRED, toastOptions)
     } else {
       const user = await JSON.parse(
         localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY),
@@ -83,38 +57,21 @@ const SetAvatar = () => {
         )
         navigate('/')
       } else {
-        toast.error('Error setting avatar. Please try again.', toastOptions)
+        toast.error(ConstantMessage.AVATAR_ERROR, toastOptions)
       }
     }
   }
 
-  useEffect(async () => {
-    const data = []
-    for (let i = 0; i < 25; i++) {
-      let image
-      try {
-        image = await axios.get(
-          `${api}/${
-            avatar[getRndInteger(0, avatar.length - 1)]
-          }/${getRndInteger(0, 5000000)}.svg?b=${getRndColor()}`,
-        )
-      } catch (error) {
-        i--
-        continue
-      }
-      if (image.data) {
-        const buffer = Buffer.from(image.data)
-        data.push(buffer.toString('base64'))
-      }
+  useEffect(() => {
+    if (!isAvatarsLoading && !getAvatarError) {
+      setAvatars(getAvatars)
     }
-    setAvatars(data)
-    setIsLoading(false)
-  }, [])
+  }, [isAvatarsLoading, getAvatarError])
 
   return (
     <Fragment>
       <RandomBackground />
-      {isLoading ? (
+      {isAvatarsLoading ? (
         <Fragment>
           <Loader />
         </Fragment>
@@ -133,9 +90,7 @@ const SetAvatar = () => {
                   return (
                     <SetAvatarAvatar
                       key={index}
-                      className={`${
-                        selectedAvatar === index ? 'selected' : ''
-                      }`}
+                      className={selectedAvatar === index ? 'selected' : ''}
                     >
                       <img
                         src={`data:image/svg+xml;base64,${avatar}`}
