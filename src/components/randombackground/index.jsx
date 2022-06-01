@@ -10,11 +10,9 @@ import Room from './background/room'
 import VanillaCSS from './background/vanillacss'
 import Plane from './background/plane'
 
-const RandomBackground = () => {
-  const getRndInteger = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1)) + min
-  }
+import { getRndInteger } from '../../utils/getRndInteger.util'
 
+const RandomBackground = () => {
   const backgrounds = [
     'Stars',
     'SolarSystem',
