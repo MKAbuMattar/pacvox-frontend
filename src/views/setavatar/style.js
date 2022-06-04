@@ -7,7 +7,7 @@ export const SetAvatarContainer = styled.section`
   justify-content: center;
   border-radius: 2rem;
   margin: 2rem 0;
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 4rem - var(--nav-size));
   overflow: hidden;
 `
 

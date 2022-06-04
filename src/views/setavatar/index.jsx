@@ -2,11 +2,18 @@ import React, { Fragment, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
+import Navbar from '../../components/navbar'
+
 import Logo from '../../assets/img/logo.png'
 import RandomBackground from '../../components/randombackground'
 import Loader from '../../components/loader'
+import MeatDecorator from '../../components/meatdecorator'
+
+import { useIsUserLoginHome } from '../../hooks/useUserLogin'
 
 import { ToastContainer, toast } from 'react-toastify'
+
+import { AiOutlineReload } from 'react-icons/ai'
 
 import {
   SetAvatarContainer,
@@ -23,16 +30,20 @@ import useGetAvatar from '../../hooks/useGetAvatar'
 
 import { toastOptions } from '../../utils/toastOptions.util'
 
-import { setAvatarRoute } from '../../constants/api.constant'
+import { SET_AVATAR_ROUTE } from '../../constants/api.constant'
 import * as ConstantMessage from '../../constants/message.constant'
 
-const SetAvatar = () => {
+const SetAvatar = (props) => {
   useCheckUserAccess()
+
+  const { getcurrentUser, isGetcurrentUserLoading } = useIsUserLoginHome()
 
   const { getAvatars, isAvatarsLoading, getAvatarError } = useGetAvatar()
 
   const [avatars, setAvatars] = useState([])
   const [selectedAvatar, setSelectedAvatar] = useState(undefined)
+  const [currentUser, setCurrentUser] = useState(undefined)
+  const [isLoading, setIsLoading] = useState(true)
 
   const navigate = useNavigate()
 
@@ -44,7 +55,7 @@ const SetAvatar = () => {
         localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY),
       )
 
-      const { data } = await axios.post(`${setAvatarRoute}/${user._id}`, {
+      const { data } = await axios.post(`${SET_AVATAR_ROUTE}/${user._id}`, {
         image: avatars[selectedAvatar],
       })
 
@@ -63,20 +74,45 @@ const SetAvatar = () => {
   }
 
   useEffect(() => {
+    if (!isGetcurrentUserLoading) {
+      setCurrentUser(getcurrentUser)
+    }
+  }, [isGetcurrentUserLoading])
+
+  useEffect(() => {
     if (!isAvatarsLoading && !getAvatarError) {
       setAvatars(getAvatars)
+      setIsLoading(false)
     }
   }, [isAvatarsLoading, getAvatarError])
 
   return (
     <Fragment>
+      <MeatDecorator
+        title={props.meta.title}
+        description={props.meta.description}
+        keywords={props.meta.keywords}
+        canonical={props.meta.canonical}
+        imageSecureUrl={props.meta.imageSecureUrl}
+        image={props.meta.image}
+        imageAlt={props.meta.imageAlt}
+        imageWidth={props.meta.imageWidth}
+        imageHeight={props.meta.imageHeight}
+        imageType={props.meta.imageType}
+      />
       <RandomBackground />
-      {isAvatarsLoading ? (
+      {isLoading ? (
         <Fragment>
           <Loader />
         </Fragment>
       ) : (
         <Fragment>
+          {currentUser && (
+            <Fragment>
+              {currentUser.isAvatarImageSet && <Navbar user={currentUser} />}
+            </Fragment>
+          )}
+
           <SetAvatarContainer>
             <SetAvatarBox>
               <SetAvatarLogoBox>
