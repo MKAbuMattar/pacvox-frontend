@@ -1,0 +1,86 @@
+{
+  "home": {
+    "title": "Pacvox | Home",
+    "description": "Pacvox App is a Chat App",
+    "keywords": "Chat, App, Pacvox, Messages",
+    "canonical": "https://react-app.com/",
+    "imageSecureUrl": "https://react-app.com/image.png",
+    "imageUrl": "https://react-app.com/image.png",
+    "imageAlt": "Pacvox App Image",
+    "imageWidth": "1200",
+    "imageHeight": "630",
+    "imageType": "image/png"
+  },
+  "login": {
+    "title": "Pacvox | Log in",
+    "description": "Pacvox App is a Chat App",
+    "keywords": "Chat, App, Pacvox, Messages",
+    "canonical": "https://react-app.com/",
+    "imageSecureUrl": "https://react-app.com/image.png",
+    "imageUrl": "https://react-app.com/image.png",
+    "imageAlt": "Pacvox App Image",
+    "imageWidth": "1200",
+    "imageHeight": "630",
+    "imageType": "image/png"
+  },
+  "register": {
+    "title": "Pacvox | Register",
+    "description": "Pacvox App is a Chat App",
+    "keywords": "Chat, App, Pacvox, Messages",
+    "canonical": "https://react-app.com/",
+    "imageSecureUrl": "https://react-app.com/image.png",
+    "imageUrl": "https://react-app.com/image.png",
+    "imageAlt": "Pacvox App Image",
+    "imageWidth": "1200",
+    "imageHeight": "630",
+    "imageType": "image/png"
+  },
+  "profile": {
+    "title": "Pacvox | Profile",
+    "description": "Pacvox App is a Chat App",
+    "keywords": "Chat, App, Pacvox, Messages",
+    "canonical": "https://react-app.com/",
+    "imageSecureUrl": "https://react-app.com/image.png",
+    "imageUrl": "https://react-app.com/image.png",
+    "imageAlt": "Pacvox App Image",
+    "imageWidth": "1200",
+    "imageHeight": "630",
+    "imageType": "image/png"
+  },
+  "settings": {
+    "title": "Pacvox | Settings",
+    "description": "Pacvox App is a Chat App",
+    "keywords": "Chat, App, Pacvox, Messages",
+    "canonical": "https://react-app.com/",
+    "imageSecureUrl": "https://react-app.com/image.png",
+    "imageUrl": "https://react-app.com/image.png",
+    "imageAlt": "Pacvox App Image",
+    "imageWidth": "1200",
+    "imageHeight": "630",
+    "imageType": "image/png"
+  },
+  "setavatar": {
+    "title": "Pacvox | Set Avatar",
+    "description": "Pacvox App is a Chat App",
+    "keywords": "Chat, App, Pacvox, Messages",
+    "canonical": "https://react-app.com/",
+    "imageSecureUrl": "https://react-app.com/image.png",
+    "imageUrl": "https://react-app.com/image.png",
+    "imageAlt": "Pacvox App Image",
+    "imageWidth": "1200",
+    "imageHeight": "630",
+    "imageType": "image/png"
+  },
+  "notfound": {
+    "title": "Pacvox | Not Found",
+    "description": "Pacvox App is a Chat App",
+    "keywords": "Chat, App, Pacvox, Messages",
+    "canonical": "https://react-app.com/",
+    "imageSecureUrl": "https://react-app.com/image.png",
+    "imageUrl": "https://react-app.com/image.png",
+    "imageAlt": "Pacvox App Image",
+    "imageWidth": "1200",
+    "imageHeight": "630",
+    "imageType": "image/png"
+  }
+}

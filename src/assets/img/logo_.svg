@@ -1,0 +1,50 @@
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 768" height="768px" width="1024px" version="1.1">
+	<g>
+		<g transform="translate(26.125 0)">
+			<g style="font-style:normal;font-weight:700;font-size:32px;line-height:1;font-family:'Maven Pro';font-variant-ligatures:none;text-align:center;text-anchor:middle" transform="translate(0 0)">
+			</g>
+			<g style="font-style:normal;font-weight:normal;font-size:72px;line-height:1;font-family:'Brandmark Sans 24 Spectrum';font-variant-ligatures:normal;text-align:center;text-anchor:middle" transform="translate(0 0)">
+				<g aria-label="p" transform="translate(0 316.70704) translate(399.15673769999995 26.65184) scale(1.67) translate(-402.25456 34.848)">
+					<rect x="82.18925" y="83.03774" class="c3" width="10.66675" height="47.96629" transform="translate(320.065313 -117.14899)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#4c71d6" stroke="#4c71d6">
+					</rect>
+					<path class="c1" d="M100,117.92154c-9.8211,0-17.81075-7.98965-17.81075-17.81027S90.1789,82.30099,100,82.30099 s17.81075,7.98965,17.81075,17.81027S109.8211,117.92154,100,117.92154z M100,92.96775c-3.93942,0-7.144,3.20457-7.144,7.14352 c0,3.93896,3.20457,7.14352,7.144,7.14352s7.144-3.20457,7.144-7.14352C107.144,96.17232,103.93942,92.96775,100,92.96775z" transform="translate(320.065313 -117.14899)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#45189e" stroke="#45189e">
+					</path>
+					<path class="c2" d="M92.856,116.41467V83.80788c-6.27183,2.75913-10.66675,9.0238-10.66675,16.30339 C82.18925,107.39086,86.58418,113.65553,92.856,116.41467z" transform="translate(320.065313 -117.14899)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#3f40b2" stroke="#3f40b2">
+					</path>
+				</g>
+				<g aria-label="a" transform="translate(0 316.70704) translate(464.96559269999995 26.65184) scale(1.67) translate(-441.66106 34.848)">
+					<path class="c1" d="M99.99976,117.92154c-9.82063,0-17.81027-7.98965-17.81027-17.81027s7.98965-17.81027,17.81027-17.81027 c9.8211,0,17.81075,7.98965,17.81075,17.81027S109.82086,117.92154,99.99976,117.92154z M99.99976,92.96775 c-3.93895,0-7.14352,3.20457-7.14352,7.14352c0,3.93896,3.20457,7.14352,7.14352,7.14352c3.93942,0,7.144-3.20457,7.144-7.14352 C107.14376,96.17232,103.93919,92.96775,99.99976,92.96775z" transform="translate(359.47157 -117.149)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#45189e" stroke="#45189e">
+					</path>
+					<rect x="107.14376" y="100.11127" class="c3" width="10.66675" height="17.05174" transform="translate(359.47157 -117.149)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#4c71d6" stroke="#4c71d6">
+					</rect>
+					<path class="c2" d="M117.81051,100.11127h-10.66675v16.3034C113.41559,113.65553,117.81051,107.39086,117.81051,100.11127z" transform="translate(359.47157 -117.149)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#3f40b2" stroke="#3f40b2">
+					</path>
+				</g>
+				<g aria-label="c" transform="translate(0 316.70704) translate(532.1309052 26.65184) scale(1.67) translate(-481.87981 34.848)">
+					<path class="c1" d="M101.54855,117.92154c-9.82063,0-17.81027-7.98965-17.81027-17.81027s7.98965-17.81027,17.81027-17.81027 c5.88831,0,11.38834,2.90533,14.71318,7.77137l-8.80783,6.01709c-1.33524-1.95456-3.54311-3.1217-5.90535-3.1217 c-3.93895,0-7.14352,3.20457-7.14352,7.14352c0,3.93896,3.20457,7.14352,7.14352,7.14352 c2.28174,0,4.37314-1.05209,5.73773-2.88638l8.55783,6.36747C112.49607,115.23544,107.15181,117.92154,101.54855,117.92154z" transform="translate(398.14153 -117.149)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#45189e" stroke="#45189e">
+					</path>
+				</g>
+				<g aria-label="v" transform="translate(0 316.70704) translate(589.7371377000001 27.854240000000004) scale(1.67) translate(-516.37456 34.128)">
+					<polygon class="c3" points="94.42442,117.163 105.57558,117.163 117.21203,83.03773 106.06087,83.03773 " transform="translate(433.58659 -117.16573)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#4c71d6" stroke="#4c71d6">
+					</polygon>
+					<polygon class="c1" points="82.78797,83.03773 93.93913,83.03773 105.57558,117.163 94.42442,117.163 " transform="translate(433.58659 -117.16573)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#45189e" stroke="#45189e">
+					</polygon>
+					<polygon class="c2" points="94.42443,117.16301 105.57556,117.16301 100,100.81203 " transform="translate(433.58659 -117.16573)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#3f40b2" stroke="#3f40b2">
+					</polygon>
+				</g>
+				<g aria-label="o" transform="translate(0 316.70704) translate(649.7876323000003 26.65184) scale(1.67) translate(-552.33294 34.848)">
+					<path class="c1" d="M99.99953,117.92154c-9.82015,0-17.8098-7.98965-17.8098-17.81027s7.98965-17.81027,17.8098-17.81027 c9.8211,0,17.81075,7.98965,17.81075,17.81027S109.82063,117.92154,99.99953,117.92154z M99.99953,92.96775 c-3.93848,0-7.14305,3.20457-7.14305,7.14352c0,3.93896,3.20457,7.14352,7.14305,7.14352c3.93942,0,7.144-3.20457,7.144-7.14352 C107.14352,96.17232,103.93895,92.96775,99.99953,92.96775z" transform="translate(470.14321 -117.149)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#45189e" stroke="#45189e">
+					</path>
+				</g>
+				<g aria-label="x" transform="translate(0 316.70704) translate(709.9827823000002 27.854240000000004) scale(1.67) translate(-588.37794 34.128)">
+					<polygon class="c1" points="81.93317,117.163 94.79392,117.163 118.06683,83.03773 105.20608,83.03773 " transform="translate(506.44477 -117.16573)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#45189e" stroke="#45189e">
+					</polygon>
+					<polygon class="c3" points="81.93317,83.03773 94.79392,83.03773 118.06683,117.163 105.20608,117.163 " transform="translate(506.44477 -117.16573)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#4c71d6" stroke="#4c71d6">
+					</polygon>
+					<polygon class="c2" points="93.56963,100.10038 100.00002,109.52925 106.43035,100.10038 100.00002,90.67151 " transform="translate(506.44477 -117.16573)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#3f40b2" stroke="#3f40b2">
+					</polygon>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
